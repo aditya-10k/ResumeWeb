@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:portfolioweb/constants/topbuttons.dart';
+import 'package:portfolioweb/widgets/header.dart';
+import 'package:portfolioweb/widgets/skillswidget.dart';
+import 'package:portfolioweb/widgets/welcomewid.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -9,6 +11,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,44 +19,13 @@ class _HomepageState extends State<Homepage> {
         scrollDirection: Axis.vertical,
         children: [
           
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0,0 , 5),
-            child: Row(
-              
-              children: [
-                Container(
-                  
-                height: 50,
-                width: 100,
-                //child: Text('data'),
-                decoration: BoxDecoration(
-                  
-                  image: DecorationImage(
-                   opacity: 0.8,
-                    image: AssetImage('assets/Animation - 1727117307762.gif'),
-                    fit: BoxFit.contain,
-                 ),
-                ),
-              ),
-              Spacer(),
-
-              for(int i=0 ; i<topbuttons.length ; i++)
-                TextButton(
-                   onPressed: () {  },
-                   child: Text(
-                    topbuttons[i],
-                    style: TextStyle(
-                      color: Colors.white,
-                      //fontWeight: FontWeight.bold,
-                      fontSize: 15
-                    ),))
-              
-              ],
-            ),
-          )
-
+          const Header(),
+          const Welcomewid(),
+          const SizedBox(height: 60,),
+          const Skillswidget(),
         ],
       )
+      
     );
   }
 }
