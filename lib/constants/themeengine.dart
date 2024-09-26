@@ -9,9 +9,9 @@ ThemeData mytheme = ThemeData(
 
 
   textTheme: GoogleFonts.firaSansTextTheme().copyWith(
-    bodySmall: TextStyle(color: Colors.white),  
-    bodyMedium: TextStyle(color: Colors.white70),  
-    bodyLarge: TextStyle(color: Colors.grey),  
+    bodySmall: TextStyle(color: Colors.white,fontFamilyFallback: ['NotoColorEmoji']),  
+    bodyMedium: TextStyle(color: Colors.white70,fontFamilyFallback: ['NotoColorEmoji']),  
+    bodyLarge: TextStyle(color: Colors.grey,fontFamilyFallback: ['NotoColorEmoji']),  
     
   ),
 

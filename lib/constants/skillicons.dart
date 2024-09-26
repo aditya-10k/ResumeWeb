@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
 List<Map> skills =[
@@ -11,7 +10,7 @@ List<Map> skills =[
 
 
 {
-  "img":Icon(BoxIcons.bxl_c_plus_plus),
+  "img":Brand(Brands.cpp),
   "title":"C++",
 },
 
@@ -21,21 +20,21 @@ List<Map> skills =[
 },
 
 {
-  "img":Icon(BoxIcons.bxl_html5),
+  "img":Brand(Brands.html_5),
   "title":"HTML",
 },
 
 {
-  "img":Brand(Brands.css3),
-  "title":"CSS",
+  "img":Brand(Brands.my_sql),
+  "title":"MYSQL",
 
 },
 
-];
-
-List<Map> skills1=[
-  {
-  "img": 'assets/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue-thumbnail-removebg-preview.png',
+{
+  "img":Brand(Brands.c_programming),
   "title":"C",
+
 },
+
 ];
+

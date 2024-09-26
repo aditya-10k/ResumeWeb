@@ -33,7 +33,7 @@ class Header extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 15+3
+                        fontSize: 20
                       ),)),
                 ),
                 Spacer(),
