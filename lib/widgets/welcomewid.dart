@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolioweb/widgets/resumeget.dart';
 
 class Welcomewid extends StatefulWidget {
   const Welcomewid({super.key});
@@ -109,21 +110,7 @@ class _WelcomewidState extends State<Welcomewid> {
                       AnimatedOpacity(
                         opacity: _opacity1,
                         duration: Duration(seconds: 2),
-                        child: FilledButton(
-                          onPressed: () {},
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromARGB(255, 30, 215, 96),
-                          ),
-                          child: Text(
-                            'My Resume',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              height: 1.5,
-                              color: Colors.black,
-                              fontSize: 28,
-                            ),
-                          ),
-                        ),
+                        child: Resumeget(),
                       ),
                     ],
                   ),

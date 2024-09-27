@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:portfolioweb/constants/themeengine.dart';
 import 'package:portfolioweb/pages/homepage.dart';
 
-void main() {
+void main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+  
   runApp(const MyApp());
 }
 
