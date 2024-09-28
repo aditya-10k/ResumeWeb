@@ -72,6 +72,7 @@ class Skillswiddesk extends StatelessWidget {
             ],
           ),
         ),
+        SizedBox(height: 20,)
       ],
     ),
                 ),

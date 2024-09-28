@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolioweb/constants/topbuttons.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -7,6 +6,15 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+height: 40,
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 30, 215, 96),
+        borderRadius: BorderRadius.only(
+      bottomLeft: Radius.circular(20),
+      bottomRight: Radius.circular(20),
+    ),
+      ),
+      /*
             padding: EdgeInsets.fromLTRB(10, 0,0 , 5),
             child: Row(
               
@@ -38,7 +46,7 @@ class Header extends StatelessWidget {
                 ),
                 Spacer(),
               ]
-            )
+            )*/
     )
     ;
 
