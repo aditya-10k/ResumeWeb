@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolioweb/widgets/resumeget.dart';
 
 class Welcomewid extends StatefulWidget {
@@ -98,7 +99,7 @@ class _WelcomewidState extends State<Welcomewid> {
                         duration: Duration(seconds: 2),
                         child: Text(
                           'Hello!\nI\'m Aditya',
-                          style: TextStyle(
+                          style: GoogleFonts.lato(
                             fontWeight: FontWeight.bold,
                             height: 1.5,
                             color: Colors.white,

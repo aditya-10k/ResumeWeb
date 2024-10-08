@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolioweb/constants/sizes.dart';
 import 'package:portfolioweb/widgets/projectcard.dart';
 import 'package:portfolioweb/widgets/projectcardweb.dart';
@@ -19,7 +20,7 @@ class Projview extends StatelessWidget {
       
             Text(
               'My Projects',
-              style: TextStyle(
+              style: GoogleFonts.lato(
                 fontWeight: FontWeight.bold,
                 height: 1.5,
                 color: Colors.white,

@@ -1,6 +1,7 @@
 import 'dart:html' as html_5;
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolioweb/constants/projectdeets.dart';
 
 class Projectcard extends StatefulWidget {
@@ -104,7 +105,7 @@ class _ProjectcardState extends State<Projectcard> {
                       
                       children: [
                             Text(projectdeet[i]["name"],
-                            style: TextStyle(
+                            style: GoogleFonts.lato(
                               color: Colors.black,
                               fontWeight:FontWeight.bold,
                               fontSize: 20
@@ -115,7 +116,7 @@ class _ProjectcardState extends State<Projectcard> {
                             SizedBox(height: 10,),
                   
                             Text(projectdeet[i]["description"],
-                            style: TextStyle(
+                            style: GoogleFonts.lato(
                               color: Colors.grey[800],
                               //fontWeight:FontWeight,
                               fontSize: 10

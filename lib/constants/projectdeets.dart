@@ -33,6 +33,14 @@ List <Map> projectdeet = [
     "imagesr":'assets/portweb.png',
     "github":'https://github.com/aditya-10k/ResumeWeb.git',
     "description":'A personal portfolio website showcasing projects, skills, and achievements, created using Flutter to deliver a responsive and visually appealing online presence.'
-  }
+  },
+
+  {
+    "name":'Recip-Ai',
+    "img":Icon(BoxIcons.bxl_flutter),
+    "imagesr":'assets/recipai.jpg',
+    "github":'https://github.com/aditya-10k/RecipAi.git',
+    "description":"Discover delicious recipes tailored to your ingredients with our AI-powered app. Simply input ingredients, and the Gemini API will recommend the perfect dishes for you!"
+  },
 
 ];

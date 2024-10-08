@@ -28,7 +28,7 @@ class Skillswiddesk extends StatelessWidget {
           alignment: Alignment.center,
           child: Text(
             'About Me',
-            style: TextStyle(
+            style: GoogleFonts.lato(
               fontWeight: FontWeight.bold,
               height: 1.5,
               color: Colors.black,
@@ -54,7 +54,7 @@ class Skillswiddesk extends StatelessWidget {
                   SizedBox(height: 16), // Space between title and content
           RichText(
             text: TextSpan(
-              style: GoogleFonts.firaSans(
+              style: GoogleFonts.lato(
                 fontSize: 22,
                 color: Colors.white, // Text color for regular text
               ),
@@ -81,7 +81,7 @@ class Skillswiddesk extends StatelessWidget {
                   children: [
                     Text(
                                 'My Skills',
-                                style: TextStyle(
+                                style: GoogleFonts.lato(
                                   fontWeight: FontWeight.bold,
                                   height: 1.5,
                                   color: Colors.black,
@@ -117,7 +117,7 @@ class Skillswiddesk extends StatelessWidget {
                         title: Center(
                           child: Text(
                             skills[i]["title"],
-                            style: TextStyle(
+                            style: GoogleFonts.lato(
                               color: Colors.white,
                               fontWeight: FontWeight.bold,
                               fontSize: 15,

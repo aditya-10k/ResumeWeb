@@ -1,6 +1,7 @@
 import 'dart:html' as html;
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Resumeget extends StatelessWidget {
   Resumeget ({super.key});
@@ -22,9 +23,9 @@ class Resumeget extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: Color.fromARGB(255, 30, 215, 96),
       ),
-      child: const Text(
+      child:  Text(
         'My Resume',
-        style: TextStyle(
+        style: GoogleFonts.lato(
           fontWeight: FontWeight.bold,
           height: 1.5,
           color: Colors.black,

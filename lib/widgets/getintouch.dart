@@ -1,6 +1,7 @@
 import 'dart:html' as html_5;
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:portfolioweb/constants/socials.dart';
 
@@ -36,7 +37,7 @@ class _GetintouchState extends State<Getintouch> {
            SizedBox(height: 30,),
 
           Text('Get in touch!',
-          style: TextStyle(
+          style: GoogleFonts.lato(
             fontSize: 15,
             fontWeight: FontWeight.bold,
             color: Colors.grey[800],
@@ -87,7 +88,7 @@ class _GetintouchState extends State<Getintouch> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
                 Text('Created with ❣️ using ',
-          style: TextStyle(
+          style:GoogleFonts.lato(
             fontSize: 15,
             fontWeight: FontWeight.bold,
             color: Colors.grey[800],
