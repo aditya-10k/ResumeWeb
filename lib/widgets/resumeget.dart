@@ -7,7 +7,7 @@ class Resumeget extends StatelessWidget {
   Resumeget ({super.key});
 
   
-  final String downloadUrl = 'https://drive.google.com/uc?export=download&id=1QorMQtvcKHwsdfCtjt_0EdQWNc6XtmAT';
+  final String downloadUrl = 'https://drive.google.com/uc?export=download&id=1d7_pttO3wv5A_UbHWL_MEMNm3Ac6rMMG';
 
   void downloadFile() {
    
