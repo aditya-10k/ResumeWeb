@@ -43,4 +43,12 @@ List <Map> projectdeet = [
     "description":"Discover delicious recipes tailored to your ingredients with our AI-powered app. Simply input ingredients, and the Gemini API will recommend the perfect dishes for you!"
   },
 
+    {
+    "name":'GDSC App',
+    "img":Icon(BoxIcons.bxl_flutter),
+    "imagesr":'assets/gdsc.jpg',
+    "github":'https://github.com/aditya-10k/launcherapp.git',
+    "description": "A comprehensive app for GDSC members to access resources, connect with peers, and participate in events and workshops for skill development and collaboration."
+  },
+
 ];
