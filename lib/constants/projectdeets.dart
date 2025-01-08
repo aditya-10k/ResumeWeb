@@ -51,4 +51,12 @@ List <Map> projectdeet = [
     "description": "A comprehensive app for GDSC members to access resources, connect with peers, and participate in events and workshops for skill development and collaboration."
   },
 
+  {
+    "name":'QRCode Auto-Login',
+    "img":Icon(BoxIcons.bxl_flutter),
+    "imagesr":'assets/qrcode.png',
+    "github":'https://github.com/aditya-10k/webqr',
+    "description": "A software solution that automatically logs in a Firebase user to a website by handling authentication credentials securely and seamlessly."
+  },
+
 ];

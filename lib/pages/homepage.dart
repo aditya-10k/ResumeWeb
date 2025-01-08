@@ -6,6 +6,7 @@ import 'package:portfolioweb/widgets/projview.dart';
 import 'package:portfolioweb/widgets/skillswiddesk.dart';
 import 'package:portfolioweb/widgets/skillswidget.dart';
 import 'package:portfolioweb/widgets/welcomewid.dart';
+import 'package:portfolioweb/widgets/welcomewidmob.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -23,17 +24,22 @@ class _HomepageState extends State<Homepage> {
     return LayoutBuilder(
       builder: (context, constraints) {
         return Scaffold(
-          body: ListView(
+          
+          body: 
+          ListView(
+          
             scrollDirection: Axis.vertical,
             children: [
               
               const Header(),
 
-              const SizedBox(height: 50,),
+              //Container(child: const SizedBox(height: 50,),color: Colors.black,),
+              if(constraints.maxWidth >= kMedDesktopWidth)
+              const Welcomewid()
+              else
+              const Welcomewidmob(),
 
-              const Welcomewid(),
-
-              const SizedBox(height: 150,),
+              //Container(child: const SizedBox(height: 150,),color: Colors.black,),
               
               if(constraints.maxWidth >= kMedDesktopWidth)
               const Skillswiddesk()

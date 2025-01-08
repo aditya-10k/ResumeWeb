@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolioweb/widgets/resumeget.dart';
 
-class Welcomewid extends StatefulWidget {
-  const Welcomewid({super.key});
+class Welcomewidmob extends StatefulWidget {
+  const Welcomewidmob({super.key});
 
   @override
-  State<Welcomewid> createState() => _WelcomewidState();
+  State<Welcomewidmob> createState() => _WelcomewidState();
 }
 
-class _WelcomewidState extends State<Welcomewid> {
+class _WelcomewidState extends State<Welcomewidmob> {
   double _opacity = 1.0;
   bool isVisible = true;
   double _opacity1 = 0.0;
@@ -70,7 +70,7 @@ class _WelcomewidState extends State<Welcomewid> {
     return Center(
       child: Container(
         color: Colors.black,
-        height: 725,
+        height: 975-50,
         child: isVisible
             ? Center(
                 child: Column(
@@ -92,14 +92,26 @@ class _WelcomewidState extends State<Welcomewid> {
                   ],
                 ),
               )
-            : Row(
+            : Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 mainAxisSize: MainAxisSize.max,
                 children: [
+                  AnimatedOpacity(
+                    opacity: _opacity1,
+                    duration: Duration(seconds: 3),
+                    child: Container(
+                      height: 675-50,
+                      width: 725,
+                      child: HtmlElementView(
+                        viewType: 'spline-viewer', // Ensure this matches the registered viewType
+                      ),
+                    ),
+                  ),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
+                      
                       Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: AnimatedOpacity(
@@ -122,18 +134,8 @@ class _WelcomewidState extends State<Welcomewid> {
                         duration: Duration(seconds: 3),
                         child: Resumeget(),
                       ),
+                      SizedBox(height: 50+50),
                     ],
-                  ),
-                  AnimatedOpacity(
-                    opacity: _opacity1,
-                    duration: Duration(seconds: 3),
-                    child: Container(
-                      height: 725,
-                      width: 725,
-                      child: HtmlElementView(
-                        viewType: 'spline-viewer', // Ensure this matches the registered viewType
-                      ),
-                    ),
                   ),
                 ],
               ),
